@@ -1,2 +1,2 @@
 # datascience-demo
-This is a demo to shows how to apply the devop's principle "continuous integration" in data science.
+Run the  [Colab Notebook here](https://github.com/irwingss/datascience-demo/blob/main/DataScience_demo_4Github.ipynb)
