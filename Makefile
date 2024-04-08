@@ -5,10 +5,10 @@ install:
 test:
 	python -m pytest --nbval-lax DataScience_demo_4Github.ipynb
 
-lint: 
-	pylint --disable=R,C *.py
-
 format:
-	black *.py
+	python -m nbqa black *.ipynb
+
+lint:
+	python -m nbqa flake8 *.ipynb
 
 all: install lint format test

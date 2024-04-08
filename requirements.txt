@@ -3,3 +3,8 @@ pandas==2.2.1
 seaborn==0.13.2
 pytest
 pylint
+nbqa
+flake8
+pipreqs
+pipreqsnb
+black
