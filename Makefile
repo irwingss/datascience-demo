@@ -3,7 +3,8 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest --nbval-lax DataScience_demo_4Github.ipynb
+	jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace DataScience_demo_4Github.ipynb
+	pytest --nbval DataScience_demo_4Github.ipynb
 
 format:
 	python -m nbqa black *.ipynb
