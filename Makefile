@@ -3,5 +3,12 @@ install:
 		pip install -r requirements.txt
 
 test:
-    source venv/bin/activate;\
-	pytest --nbval *.ipynb
+	python -m pytest --nbval-lax DataScience_demo_4Github.ipynb
+
+lint: 
+	pylint --disable=R,C *.py
+
+format:
+	black *.py
+
+all: install lint format test

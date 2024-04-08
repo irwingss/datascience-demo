@@ -1,1 +1,5 @@
-
+nbformat==5.10.4
+pandas==2.2.1
+seaborn==0.13.2
+pytest
+pylint
