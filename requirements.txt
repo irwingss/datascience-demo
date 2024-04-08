@@ -8,3 +8,4 @@ flake8
 pipreqs
 pipreqsnb
 black
+nbval>=0.9
